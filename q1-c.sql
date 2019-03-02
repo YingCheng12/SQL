@@ -1,0 +1,1 @@
+select country.continent, count(city.id) from country,city where country.code=city.countrycode group by country.continent order by continent;

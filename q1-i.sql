@@ -1,0 +1,1 @@
+select country.name from countrylanguage,country where country.code= countrylanguage.countrycode and countrylanguage.language="french"  and countrylanguage.isofficial="T" and country.name in (select country.name from countrylanguage,country where country.code= countrylanguage.countrycode and countrylanguage.language="english"  and countrylanguage.isofficial="T" );

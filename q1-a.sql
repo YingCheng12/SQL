@@ -1,0 +1,1 @@
+select city.name,country.name from city join country on city.countrycode=country.code order by city.name;

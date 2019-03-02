@@ -1,0 +1,1 @@
+select distinct country.name from country,city where city.countrycode = country.code and country.continent ="Asia" and country.GNP>=all(select country.GNP from city,country where city.countrycode = country.code and country.continent ="Asia");

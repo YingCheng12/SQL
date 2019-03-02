@@ -1,0 +1,1 @@
+select country.continent,sum(country_city_view.cname)  from country, country_city_view where country.code=country_city_view.code  group by country.continent order by country.continent;

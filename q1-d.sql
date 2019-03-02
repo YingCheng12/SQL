@@ -1,0 +1,1 @@
+select country.code,count(city.name) from country, city where country.code=city.countrycode group by country.code having count(city.name)>=50 order by country.code;

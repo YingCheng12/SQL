@@ -1,0 +1,1 @@
+select distinct country.name from country,city where city.countrycode = country.code and country.GNP !=(select min(country.GNP) from country);
